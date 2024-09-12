@@ -1,0 +1,286 @@
+/* Đặt lại toàn cục */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000; /* Nền màu đen */
+  color: #fff; /* Chữ màu trắng để dễ đọc trên nền đen */
+  overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+}
+
+/* Đầu trang */
+.header {
+  width: 100vw; /* Chiều rộng toàn màn hình */
+  background-color: #222; /* Nền tối để làm nổi bật menu */
+  padding: 15px 20px; /* Padding để tạo khoảng cách từ viền */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Bóng nhẹ để tạo chiều sâu */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Căn lề trái và lề phải */
+  box-sizing: border-box; /* Đảm bảo padding và border được tính vào chiều rộng tổng cộng */
+  margin: 0; /* Đảm bảo không có khoảng cách ngoài cùng */
+}
+
+/* Tiêu đề trong header */
+.header h2 {
+  font-size: 36px; /* Kích thước chữ lớn hơn */
+  font-weight: 700; /* Độ đậm chữ tăng cường */
+  font-family: "Arial", sans-serif; /* Phông chữ nổi bật hơn */
+  letter-spacing: 1px; /* Khoảng cách giữa các ký tự */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Đổ bóng rõ nét */
+  margin: 0;
+  padding: 0;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Hiệu ứng chuyển màu và đổ bóng khi hover */
+}
+
+.header h2 a {
+  color: #ff6347; /* Màu chữ nổi bật hơn */
+  text-decoration: none;
+}
+
+.header h2:hover {
+  color: #ffffff; /* Màu chữ thay đổi khi hover */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Đổ bóng mạnh hơn khi hover */
+}
+
+/* Menu */
+.header ul.menu {
+  list-style-type: none; /* Bỏ dấu chấm trước các mục menu */
+  display: flex; /* Hiển thị các mục menu theo hàng ngang */
+  gap: 20px; /* Khoảng cách giữa các mục menu */
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa menu trong không gian còn lại */
+}
+
+.header ul.menu li {
+  position: relative;
+}
+
+.header ul.menu li a {
+  color: #fff; /* Màu chữ menu */
+  text-decoration: none; /* Bỏ gạch chân */
+  font-size: 18px; /* Kích thước chữ */
+  padding: 10px 15px; /* Padding để tạo không gian xung quanh chữ */
+  border-radius: 4px; /* Bo góc nhẹ */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu nền và chữ khi hover */
+}
+
+.header ul.menu li a:hover {
+  background-color: #ff6600; /* Màu nền khi hover */
+  color: #fff; /* Màu chữ khi hover */
+  border-radius: 6px; /* Bo góc khi hover */
+}
+
+/* Slider */
+.slider {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+/* Nội dung chính */
+.content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Để các phần tử cuộn xuống nếu không đủ chỗ */
+  margin: 0 auto; /* Căn giữa nội dung chính */
+  padding: 20px;
+  max-width: 1200px; /* Giới hạn chiều rộng cho nội dung chính */
+}
+
+/* Danh mục sản phẩm */
+.category {
+  width: 100%;
+  max-height: 700px;
+  max-width: 300px; /* Giới hạn chiều rộng cho danh mục */
+  background-color: #ffffff; /* Màu nền trắng */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); /* Hiệu ứng đổ bóng nhẹ */
+  margin-bottom: 30px;
+  text-align: center; /* Căn giữa tất cả nội dung bên trong */
+}
+
+.category h3 {
+  font-size: 24px;
+  color: #333333; /* Màu chữ xám đậm */
+  margin-bottom: 20px;
+  font-weight: 700; /* Chữ đậm */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff6600; /* Dưới tiêu đề có gạch chân màu cam */
+  padding-bottom: 10px;
+}
+
+/* Danh sách chính trong danh mục */
+.list-category {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-category li {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  padding: 15px 20px; /* Padding để tạo không gian trong mục */
+  background-color: #ff6600; /* Màu nền sáng cho mục */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Căn giữa chữ trong từng mục */
+}
+
+.list-category li:hover {
+  background-color: #ff6600; /* Màu nền khi hover */
+  color: #000; /* Màu chữ khi hover */
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25); /* Bóng khi hover */
+  cursor: pointer;
+}
+
+/* Liên kết trong danh mục */
+.list-category li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 8px 0;
+  font-weight: 700; /* Chữ đậm trong liên kết */
+  transition: color 0.3s ease;
+}
+
+/* Danh sách phụ (submenu) */
+.more {
+  display: none; /* Ẩn submenu theo mặc định */
+  list-style: none;
+  margin: 10px 0 0 20px; /* Thụt vào cho submenu */
+}
+
+.list-category li:hover .more {
+  display: block; /* Hiện submenu khi hover vào item chính */
+}
+
+.more li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding: 8px 12px; /* Padding để tạo không gian trong submenu */
+  background-color: #ffffff; /* Nền trắng cho submenu */
+  border-radius: 6px; /* Bo góc submenu */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more li a {
+  color: #333333; /* Màu chữ trong submenu */
+  text-decoration: none;
+}
+
+.more li a:hover {
+  color: #ff6600; /* Thay đổi màu khi hover liên kết submenu */
+}
+
+.more li:hover {
+  background-color: #f5f5f5; /* Nền khi hover submenu */
+}
+
+/* Phần sản phẩm */
+.product {
+  flex: 1; /* Chiếm không gian còn lại bên phải danh mục */
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Danh sách sản phẩm */
+.product ul.list-product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product ul.list-product li {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #222;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.product ul.list-product li:hover {
+  transform: translateY(-5px);
+}
+
+.product ul.list-product li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.product ul.list-product li a img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.product ul.list-product li a p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.product ul.list-product li a p:nth-child(2) {
+  font-weight: bold;
+  color: #ff6347;
+}
+
+/* Footer */
+.footer {
+  background-color: #333; /* Màu nền tối cho footer */
+  color: #fff; /* Màu chữ trắng để nổi bật trên nền tối */
+  padding: 20px; /* Padding xung quanh nội dung */
+  text-align: center; /* Căn giữa nội dung */
+  border-top: 1px solid #444; /* Đường viền trên cùng của footer */
+  margin-top: 40px; /* Khoảng cách từ phần nội dung trên */
+  font-family: Arial, sans-serif; /* Phông chữ dễ đọc */
+}
+
+.footer h5 {
+  font-size: 20px; /* Kích thước chữ tiêu đề */
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+  font-weight: 700; /* Đậm chữ */
+  color: #ff6600; /* Màu chữ tiêu đề */
+}
+
+.footer p {
+  font-size: 16px; /* Kích thước chữ cho các đoạn */
+  margin-bottom: 10px; /* Khoảng cách dưới mỗi đoạn */
+  line-height: 1.5; /* Cao dòng để dễ đọc */
+}
+
+.footer p:last-child {
+  margin-bottom: 0; /* Loại bỏ khoảng cách dưới đoạn cuối cùng */
+}
