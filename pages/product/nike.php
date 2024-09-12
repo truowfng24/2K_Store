@@ -1,4 +1,4 @@
-<div class="product">
+<p>danh muc</p>
                 <ul class="list-product">
                     <li>
                         <a href="">
@@ -57,4 +57,4 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+          

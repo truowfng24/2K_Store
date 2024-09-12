@@ -1,4 +1,4 @@
-<div class="category">
+
                 <h3>Danh Mục Sản Phẩm</h3>
                 <ul class="list-category">
                     <li><a href="">NIKE</a></li>
@@ -13,4 +13,4 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
+            
