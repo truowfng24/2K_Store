@@ -25,6 +25,18 @@
             elseif($tam == 'nike'){
                 include("product/nike.php");
             }
+            elseif($tam == 'adidas'){
+                include("product/adidas.php");
+            }
+            elseif($tam == 'converse'){
+                include("product/converse.php");
+            }
+            elseif($tam == 'tat'){
+                include("product/tat.php");
+            }
+            elseif($tam == 'dep'){
+                include("product/dep.php");
+            }
             else{
                 include("product/trend.php");
             }
