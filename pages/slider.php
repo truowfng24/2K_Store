@@ -1,3 +1,3 @@
 <div class="slider">
-            <img src="./images/banner/banner.jpg" alt="Banner" class="banner">
-        </div>
+        <img src="./images/banner/banner.jpg" alt="Banner" class="banner">
+</div>

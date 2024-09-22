@@ -171,39 +171,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Danh sách phụ (submenu) */
-.more {
-  display: none; /* Ẩn submenu theo mặc định */
-  list-style: none;
-  margin: 10px 0 0 20px; /* Thụt vào cho submenu */
-}
-
-.list-category li:hover .more {
-  display: block; /* Hiện submenu khi hover vào item chính */
-}
-
-.more li {
-  font-size: 16px;
-  margin-bottom: 8px;
-  padding: 8px 12px; /* Padding để tạo không gian trong submenu */
-  background-color: #ffffff; /* Nền trắng cho submenu */
-  border-radius: 6px; /* Bo góc submenu */
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.more li a {
-  color: #333333; /* Màu chữ trong submenu */
-  text-decoration: none;
-}
-
-.more li a:hover {
-  color: #ff6600; /* Thay đổi màu khi hover liên kết submenu */
-}
-
-.more li:hover {
-  background-color: #f5f5f5; /* Nền khi hover submenu */
-}
-
 /* Phần sản phẩm */
 .product {
   flex: 1; /* Chiếm không gian còn lại bên phải danh mục */

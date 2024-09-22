@@ -1,15 +1,14 @@
-
+<!-- Danh mục sản phẩm -->
 <h3>Danh Mục Sản Phẩm</h3>
 <ul class="list-category">
-    <li><a href="index.php?quanly=nike">NIKE</a></li>
-    <li><a href="index.php?quanly=adidas">ADIDAS</a></li>
-    <li><a href="index.php?quanly=converse">CONVERSE</a></li>
-    <li>
-        <a href="">PHỤ KIỆN</a>
-        <ul class="more">
-            <li><a href="index.php?quanly=tat">TẤT</a></li>
-            <li><a href="index.php?quanly=dep">DÉP</a></li>
-        </ul>
-    </li>
+    <?php
+        $sql = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+        $query = mysqli_query($mysqli, $sql);
+        while($row = mysqli_fetch_array($query)){
+    ?>
+        <li><a href="index.php?quanly=danhmucsanpham&id=<?php echo $row['id_danhmuc']?>"><?php echo $row['tendanhmuc']?></a></li>
+    <?php
+    }
+    ?>
 </ul>
             
