@@ -1,1 +1,3 @@
-<p>dashboard</p>
+<div class="dashboard">
+    <p>dashboard</p>
+</div>

@@ -1,1 +1,3 @@
-<p>header admincp</p>
+<div class="header">
+<p>header</p>
+</div>

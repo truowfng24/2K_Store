@@ -1,1 +1,3 @@
-<p>footer admincp</p>
+<div class="footer">
+<p>Create by "truowfng"</p>
+</div>
