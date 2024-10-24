@@ -29,59 +29,100 @@ body {
   margin: 0; /* Đảm bảo không có khoảng cách ngoài cùng */
 }
 
-/* Tiêu đề trong header */
-.header h2 {
-  font-size: 36px; /* Kích thước chữ lớn hơn */
-  font-weight: 700; /* Độ đậm chữ tăng cường */
-  font-family: "Arial", sans-serif; /* Phông chữ nổi bật hơn */
-  letter-spacing: 1px; /* Khoảng cách giữa các ký tự */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Đổ bóng rõ nét */
-  margin: 0;
-  padding: 0;
-  transition: color 0.3s ease, text-shadow 0.3s ease; /* Hiệu ứng chuyển màu và đổ bóng khi hover */
+/* Định dạng tiêu đề */
+h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
 }
 
-.header h2 a {
-  color: #ff6347; /* Màu chữ nổi bật hơn */
-  text-decoration: none;
+/* Định dạng tiêu đề */
+h2 {
+  font-size: 28px; /* Tăng kích thước chữ */
+  color: #333; /* Màu chữ */
+  text-align: center; /* Canh giữa tiêu đề */
+  margin: 20px 0; /* Khoảng cách trên và dưới */
+  font-family: "Arial", sans-serif; /* Font chữ */
 }
 
-.header h2:hover {
-  color: #ffffff; /* Màu chữ thay đổi khi hover */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Đổ bóng mạnh hơn khi hover */
-}
-
-/* Menu */
-.header ul.menu {
-  list-style-type: none; /* Bỏ dấu chấm trước các mục menu */
-  display: flex; /* Hiển thị các mục menu theo hàng ngang */
-  gap: 20px; /* Khoảng cách giữa các mục menu */
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /* Căn giữa menu trong không gian còn lại */
-}
-
-.header ul.menu li {
-  position: relative;
-}
-
-.header ul.menu li a {
-  color: #fff; /* Màu chữ menu */
+/* Định dạng liên kết trong tiêu đề */
+h2 a {
   text-decoration: none; /* Bỏ gạch chân */
+  color: #ff6600; /* Màu xanh cho liên kết */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+h2 a:hover {
+  color: #ff6600; /* Màu khi di chuột qua */
+}
+
+/* Định dạng menu */
+.menu {
+  list-style-type: none; /* Bỏ dấu chấm của danh sách */
+  padding: 0;
+  text-align: center; /* Canh giữa menu */
+  margin: 15px 0; /* Khoảng cách trên và dưới menu */
+  background-color: #333; /* Màu nền cho menu */
+  padding: 10px 0; /* Khoảng cách bên trong menu */
+  border-radius: 5px; /* Bo góc cho menu */
+}
+
+.menu li {
+  display: inline; /* Hiển thị danh sách theo hàng ngang */
+  margin: 0 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu a {
+  text-decoration: none; /* Bỏ gạch chân cho liên kết */
+  color: #ffffff; /* Màu chữ cho liên kết */
+  font-weight: bold; /* Đậm chữ */
   font-size: 18px; /* Kích thước chữ */
-  padding: 10px 15px; /* Padding để tạo không gian xung quanh chữ */
-  border-radius: 4px; /* Bo góc nhẹ */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu nền và chữ khi hover */
+  text-transform: uppercase; /* Chữ in hoa */
+  letter-spacing: 1px; /* Khoảng cách giữa các chữ cái */
+  transition: color 0.3s, text-shadow 0.3s; /* Hiệu ứng chuyển màu và bóng đổ */
 }
 
-.header ul.menu li a:hover {
-  background-color: #ff6600; /* Màu nền khi hover */
-  color: #fff; /* Màu chữ khi hover */
-  border-radius: 6px; /* Bo góc khi hover */
+.menu a:hover {
+  color: #ff6600; /* Màu khi di chuột qua */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Bóng đổ cho chữ khi hover */
 }
 
+/* Định dạng cho các mục menu đang hoạt động */
+.menu a.active {
+  color: #ffcc00; /* Màu nổi bật cho mục đang hoạt động */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Bóng đổ cho mục đang hoạt động */
+}
+
+/* Định dạng biểu mẫu tìm kiếm */
+form {
+  text-align: center; /* Canh giữa biểu mẫu */
+  margin-top: 20px; /* Khoảng cách phía trên biểu mẫu */
+}
+
+form input[type="text"] {
+  padding: 10px; /* Khoảng cách bên trong ô tìm kiếm */
+  width: 250px; /* Chiều rộng của ô tìm kiếm */
+  border: 1px solid #ccc; /* Đường viền */
+  border-radius: 5px; /* Bo góc */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+/* Định dạng nút gửi */
+form input[type="submit"] {
+  padding: 10px 20px; /* Khoảng cách bên trong nút */
+  background-color: #ff6600; /* Màu nền cho nút */
+  color: white; /* Màu chữ cho nút */
+  border: none; /* Bỏ đường viền */
+  border-radius: 5px; /* Bo góc */
+  cursor: pointer; /* Hiển thị con trỏ khi di chuột qua */
+  font-size: 16px; /* Kích thước chữ */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+form input[type="submit"]:hover {
+  background-color: #ff6600; /* Màu nền khi di chuột qua nút */
+}
 /* Slider */
 .slider {
   margin: 20px 0;
@@ -109,7 +150,58 @@ body {
   flex-wrap: wrap; /* Để các phần tử cuộn xuống nếu không đủ chỗ */
   margin: 0 auto; /* Căn giữa nội dung chính */
   padding: 20px;
-  max-width: 1200px; /* Giới hạn chiều rộng cho nội dung chính */
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.content table th,
+.content table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center; /* Center text */
+  color: black; /* Change text color to black */
+}
+
+.content table th {
+  background-color: #f0f0f0;
+  color: black; /* Ensure header text is also black */
+}
+
+.content table td img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.content table td a {
+  text-decoration: none;
+  color: black; /* Change link color to black */
+}
+
+.content table td a:hover {
+  color: #23527c; /* Keep hover color for links */
+}
+
+.content table td .fas {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.content table td .fas:hover {
+  cursor: pointer;
+}
+
+.content table tr:last-child td {
+  border-bottom: none;
+}
+
+.content table tr:last-child td:first-child {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* Danh mục sản phẩm */
