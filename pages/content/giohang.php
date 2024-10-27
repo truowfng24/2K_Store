@@ -1,8 +1,5 @@
 
 <?php
-    session_start();
-?>
-<?php
     if(isset($_SESSION['cart'])){
      
     }
@@ -47,14 +44,33 @@
  }
 ?>
     <tr>
-        <td><p>Tong tien: <?php echo $tongtien?>$</p></td>
-        <td><a href="pages/content/themgiohang.php?xoatatca=1">Xoá tất cả</a></td>
+        <td colspan="8"><p>Tổng tiền: <?php echo $tongtien?>$</p></td>
+        
+    </tr>
+    <tr>
+      <td colspan="4">
+        <div style="clear: both;"></div>
+        <?php
+          if(isset($_SESSION['dangky'])){
+        ?>
+        <p><a href="index.php?quanly=thanhtoan">Đặt hàng</a></p>
+        <?php
+          }else{
+        ?>
+        <p>
+          <a href="index.php?quanly=dangky">Đăng ký để đặt hàng</a>
+        </p>
+        <?php
+          }
+        ?>
+      </td>
+      <td colspan="4"><a href="pages/content/themgiohang.php?xoatatca=1">Xoá tất cả</a></td>
     </tr>
 <?php
   }else{
 ?> 
  <tr>
-    <td >Giỏ hàng trống</td>
+    <td colspan="8">Giỏ hàng trống</td>
   </tr>
 <?php
   }

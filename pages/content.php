@@ -25,6 +25,18 @@
                 elseif($tam == 'sanpham'){
                     include("content/product.php");
                 }
+                elseif($tam == 'dangky'){
+                    include("content/dangky.php");
+                }
+                elseif($tam == 'thanhtoan'){
+                    include("content/thanhtoan.php");
+                }
+                elseif($tam == 'dangnhap'){
+                    include("content/dangnhap.php");
+                }
+                elseif($tam == 'timkiem'){
+                    include("content/timkiem.php");
+                }
                 else{
                     include("content/index.php");
                 }
