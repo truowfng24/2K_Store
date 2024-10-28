@@ -9,6 +9,7 @@
         $sql_dangky = mysqli_query($mysqli, "INSERT INTO tbl_dangky(tenkhachhang, email, dienthoai, matkhau, diachi) VALUE ('".$tenkhachhang."','".$email."','".$dienthoai."','".$matkhau."','".$diachi."')");
         if($sql_dangky){
             echo '<p style="color:green">Đăng ký thành công</p>';
+           
             $_SESSION['dangky'] = $tenkhachhang;
             header('location:index.php?quanly=giohang');
         }

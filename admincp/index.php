@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>admincp</title>
     <style>
             /* Tổng thể */
@@ -125,7 +126,7 @@ body, html {
 </head>
 <body>
     <div class="wrapper">
-        <h2 style="text-align: center;">WELLCOME TO ADMINCP</h2>
+       
         <?php
             include("config/config.php");
             include("modules/header.php");
@@ -134,5 +135,7 @@ body, html {
             include("modules/footer.php");
         ?> 
     </div>
+
+
 </body>
 </html>
