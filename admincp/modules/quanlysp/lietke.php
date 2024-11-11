@@ -30,7 +30,7 @@
     <td style="padding: 12px;"><?php echo $row['tendanhmuc']?></td>
     <td style="padding: 12px;"><?php echo $row['masp']?></td>
     <td style="padding: 12px;"><?php echo $row['tomtat']?></td>
-    <td style="padding: 12px;"><?php echo $row['tinhtrang'] == 1 ? 'Kích hoạt' : 'Ẩn'; ?></td>
+    <td style="padding: 12px;"><?php echo $row['tinhtrang'] == 1 ? 'Còn hàng' : 'Hết hàng'; ?></td>
     <td style="padding: 12px;">
         <a href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham']?>" style="color: #e74c3c; text-decoration: none; font-weight: bold;">Xoá</a> | 
         <a href="?action=quanlysanpham&query=sua&idsanpham=<?php echo $row['id_sanpham']?>" style="color: #3498db; text-decoration: none; font-weight: bold;">Sửa</a>

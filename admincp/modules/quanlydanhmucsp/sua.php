@@ -12,10 +12,7 @@
           <td style="padding: 15px; font-weight: bold; color: #2c3e50;">Tên danh mục</td>
           <td style="padding: 15px;"><input type="text" value="<?php echo $dong['tendanhmuc']?>" name="tendanhmuc" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #dcdcdc; font-size: 1em; box-sizing: border-box;"></td>
         </tr>
-        <tr>
-          <td style="padding: 15px; font-weight: bold; color: #2c3e50;">Thứ tự</td>
-          <td style="padding: 15px;"><input type="text" value="<?php echo $dong['thutu']?>" name="thutu" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #dcdcdc; font-size: 1em; box-sizing: border-box;"></td>
-        </tr>
+        
         <tr>
           <td colspan="2" style="text-align: center; padding: 20px;">
             <input type="submit" name="suadanhmuc" value="Sửa danh mục sản phẩm" style="padding: 12px 25px; background-color: #27ae60; color: white; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;">

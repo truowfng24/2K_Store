@@ -36,10 +36,7 @@
           <td style="padding: 15px; font-weight: bold;">Tóm tắt</td>
           <td style="padding: 15px;"><textarea name="tomtat" rows="10" style="resize: none; width: 100%; padding: 8px; border: 1px solid #ced4da; border-radius: 4px;"><?php echo $row['tomtat']?></textarea></td>
         </tr>
-        <tr>
-          <td style="padding: 15px; font-weight: bold;">Nội dung</td>
-          <td style="padding: 15px;"><textarea name="noidung" rows="10" style="resize: none; width: 100%; padding: 8px; border: 1px solid #ced4da; border-radius: 4px;"><?php echo $row['noidung']?></textarea></td>
-        </tr>
+        
         <tr>
           <td style="padding: 15px; font-weight: bold;">Danh mục sản phẩm</td>
           <td style="padding: 15px;">
@@ -69,8 +66,8 @@
               <?php
                 if($row['tinhtrang'] == 1){
               ?>
-              <option value="1" selected>Kích hoạt</option>
-              <option value="0">Ẩn</option>
+              <option value="1" selected>Còn hàng</option>
+              <option value="0">Hết hàng</option>
               <?php
                 }else{
               ?>

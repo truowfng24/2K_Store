@@ -1,5 +1,5 @@
 <?php
-  $sql_lietke_danhmucsp = "SELECT * FROM tbl_danhmuc ORDER BY thutu DESC";
+  $sql_lietke_danhmucsp = "SELECT * FROM tbl_danhmuc ";
   $query_lietke_danhmucsp = mysqli_query($mysqli, $sql_lietke_danhmucsp);
 ?>
 <p style="text-align: center; font-size: 1.8em; font-weight: bold; color: #2c3e50; margin-bottom: 20px;">Danh mục hiện có</p>
