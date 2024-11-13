@@ -1,6 +1,7 @@
 <?php
     if(isset($_GET['dangxuat'])&&$_GET['dangxuat']==1){
         unset($_SESSION['dangky']);
+        unset($_SESSION['id_khachhang']);
     }
 ?>
 <div class="header">

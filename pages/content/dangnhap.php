@@ -9,12 +9,14 @@ if(isset($_POST['dangnhap'])){
     if($count > 0){
         $row_data = mysqli_fetch_array($row);
         $_SESSION['dangky'] = $row_data['tenkhachhang'];
-        $_SESSION['id_khachhang'] = $row_data['id_dangky'];
+        $_SESSION['id_khachhang'] = $row_data['id_khachhang'];
+        
         header('Location:index.php?quanly=giohang');
     } else {
         echo "<script>alert('Sai thông tin');</script>";       
         // header('Location:login.php');
     }
+    
 }
 ?>
 <form action="" autocapitalize="off" method="POST">
