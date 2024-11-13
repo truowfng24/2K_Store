@@ -11,7 +11,7 @@
             echo '<p style="color:green">Đăng ký thành công</p>';
            
             $_SESSION['dangky'] = $tenkhachhang;
-            header('location:index.php?quanly=giohang');
+            header('location:index.php?quanly=dangnhap');
         }
     }
 ?>

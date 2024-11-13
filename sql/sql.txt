@@ -1,0 +1,60 @@
+-- Tạo database 2k_store
+CREATE DATABASE 2k_store;
+USE 2k_store;
+
+-- Tạo bảng tbl_admin
+CREATE TABLE tbl_admin (
+    id_admin INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100),
+    password VARCHAR(100),
+    adminstatus VARCHAR(50)
+);
+
+-- Thêm dữ liệu vào bảng tbl_admin với password mã hóa MD5
+INSERT INTO tbl_admin (username, password, adminstatus)
+VALUES ('admin', MD5('1234'), 'Quản lý');
+
+-- Tạo bảng tbl_cart
+CREATE TABLE tbl_cart (
+    id_cart INT AUTO_INCREMENT PRIMARY KEY,
+    code_cart VARCHAR(10),
+    id_khachhang INT(11)
+);
+
+-- Tạo bảng tbl_cart_detail
+CREATE TABLE tbl_cart_detail (
+    id_cart_detail INT AUTO_INCREMENT PRIMARY KEY,
+    code_cart VARCHAR(10),
+    id_sanpham INT(11),
+    soluongmua INT(11)
+);
+
+-- Tạo bảng tbl_dangky
+CREATE TABLE tbl_dangky (
+    id_khachhang INT AUTO_INCREMENT PRIMARY KEY,
+    tenkhachhang VARCHAR(100),
+    email VARCHAR(100),
+    diachi VARCHAR(255),
+    matkhau VARCHAR(100),
+    dienthoai VARCHAR(15)
+);
+
+-- Tạo bảng tbl_danhmuc
+CREATE TABLE tbl_danhmuc (
+    id_danhmuc INT AUTO_INCREMENT PRIMARY KEY,
+    tendanhmuc VARCHAR(100)
+);
+
+-- Tạo bảng tbl_sanpham
+CREATE TABLE tbl_sanpham (
+    id_sanpham INT AUTO_INCREMENT PRIMARY KEY,
+    tensanpham VARCHAR(250),
+    masp VARCHAR(100),
+    giasp INT(11),
+    soluong INT(11),
+    hinhanh VARCHAR(50),
+    tomtat TEXT,
+    tinhtrang INT,
+    id_danhmuc INT(11),
+   
+);
