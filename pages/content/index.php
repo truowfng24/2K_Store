@@ -12,7 +12,7 @@
 
                 <img src="admincp/modules/quanlysp/uploads/<?php echo $row['hinhanh']?>" alt="">
                 <p><?php echo $row['tensanpham']?></p>
-                <p>Gia: <?php echo ($row['giasp'])?> VND</p>
+                <p>Gia: <?php echo ($row['giasp'])?> $</p>
             </a>
         </li>
     <?php
